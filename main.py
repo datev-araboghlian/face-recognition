@@ -52,7 +52,7 @@ face_label = tk.Label(full_window_frame, text='Recognized Face: Unknown', bg='gr
 face_label.pack(side=tk.BOTTOM, fill=tk.X)
 
 # Create a label for door status
-status_label = tk.Label(full_window_frame, text='', bg='gray', font=('Helvetica', 16))
+status_label = tk.Label(full_window_frame, text='', bg='gray', font=('Helvetica', 16), height=2)
 status_label.pack(side=tk.BOTTOM, fill=tk.X)
 
 # Initialize the camera
@@ -112,7 +112,7 @@ def update_frame():
 
 # Create a label for the video feed
 video_label = tk.Label(full_window_frame)
-video_label.pack()
+video_label.pack(pady=50)
 
 # Start updating frames
 update_frame()
@@ -127,4 +127,4 @@ cv2.destroyAllWindows()
 if __name__ == '__main__':
     print('Facial Recognition Security System')
 
-#hello
+#hel
